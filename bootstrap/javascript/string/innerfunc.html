@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+            function Person(){
+                this.name = 'jackz',
+                this.age = 25,
+                this.sayname = function(){
+
+                    //this is accessible
+                    console.log(this.age);
+
+                    let innerfunc = () => {
+
+                        //this  refers to the global object
+                        console.log(this.age); //25
+                        console.log(this); // property
+
+                    }
+                    innerfunc();
+                }
+            }
+             let x = new Person();
+             x.sayname();
+        </script>
+    </body>
+</html>

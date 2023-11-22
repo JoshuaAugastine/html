@@ -1,0 +1,23 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1> Demo Prompt()</h1>
+        <button onclick="myinput()">click to enter your name</button>
+        <p id = "msg"></p>
+
+        <script>
+            function myinput(){
+                var name= prompt("Enter Your Name :");
+                //var allows re declaration
+ 
+                if(name == null || name ==""){
+          document.getElementById("msg").innerHTML="you didnt enter anything.please enter your name again";
+                }
+                else{
+                    document.getElementById("msg").innerHTML="you entered : " + name;
+                }
+            }
+        </script>
+    </body>
+</html>

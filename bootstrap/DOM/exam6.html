@@ -1,0 +1,37 @@
+<html>
+    <body>
+        Username:
+        <input type="text" id="username" secured="true" value="Ganesh">
+        Password:
+        <input type="password" id="Password" secured="true" value="Password" style="color: red;">
+         <script>
+             let input= document.querySelector('#username');
+                 console.log(input.secured); // undefined
+                 console.log(input.value); // Ganesh
+ 
+                 for(let attr of input.attributes){
+                     console.log(`${attr.name}= ${attr.value}`) 
+                 }/*  Ans:
+                 type=text
+                 id=username
+                 secured=true
+                 value=Ganesh
+                 */
+                 
+                 input.setAttribute('value','guest');
+                 console.log(input.value); // guest
+ 
+                 input.value="admin"
+                 console.log(input.getAttribute('value'));//guest
+                 
+                 let input1 =document.querySelector('#Password');
+ 
+                 let styleAttr = input1.getAttribute('style');
+                 console.log(styleAttr);
+                 console.dir(input1.style)
+                 //console.log(input1.style)
+                 
+       
+        </script>
+    </body>
+</html>

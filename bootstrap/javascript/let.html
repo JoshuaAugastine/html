@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Demo :  JS variables</h1>
+
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <button onclick="check()">checking</button>
+        <p id="p4"></p>
+        <p id="p5"></p>
+    <script>
+         let name = "steve"; //assigned string value 
+         let num = 100; //assigned numeric value
+         let isActive = true; //assigned boolean value
+
+         //let name ="steve" , num=100 , isActive=true;
+
+         document.getElementById("p1").innerHTML = name;
+         document.getElementById("p2").innerHTML = num;
+         document.getElementById("p3").innerHTML = isActive;
+
+         function check(){
+            var x =10; // global var
+            if(true){
+                let y = 100; // local var
+                document.getElementById("p4").innerHTML ="let variable :" + y; 
+            }
+            document.getElementById("p5").innerHTML ="var variable :" + y; 
+         }
+
+         /*
+          let num1 = 100;
+          let num2 = num1;
+             document.getElementById("p1").innerHTML = num1;
+              document.getElementById("p2").innerHTML = num2;  */
+
+         /* 
+         let name = "steve"
+         num = 100,
+         isactive*/
+    </script>
+    </body>
+</html>

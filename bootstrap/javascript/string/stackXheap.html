@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            let person = { // mentioned = / it take at stack value
+                name : 'john', // it take as json / heap value
+                age : 25,
+            };
+
+            function increaseAge(obj){
+              obj.age += 1;  // it will reflect on person
+              obj = { name : 'jane' , age : 22}; //local func
+              console.log(obj);  
+            }
+
+            increaseAge(person);
+            console.log(person);
+        </script>
+    </body>
+</html>

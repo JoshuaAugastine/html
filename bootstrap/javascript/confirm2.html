@@ -1,0 +1,22 @@
+<html>
+    <head>    
+    </head>
+    <body>
+        <h1>Demo Confirm()</h1>
+        <button onclick="save()">Save Data</button>
+        <p id = "msg"></p>
+
+        <script>
+            function save(){
+                var userpreference;
+                if(confirm("do you want to save changes?") == true){
+                    userpreference ="data saved successfully!"
+                }
+                else{
+                    userpreference ="save cancelled!"
+                }
+                document.getElementById("msg").innerHTML=userpreference;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <body>
+    <ul id="menu">
+        <li class="first">Home</li>
+        <li>products</li>
+        <li class ="current">Customer Support</li>
+        <li>Careers</li>
+        <li>Investors</li>
+        <li>News</li>
+        <li class = "last">About us</li>
+    </ul>
+    <script>
+        let content = document.getElementById('menu');
+        //let firstchild = content.firstchild.nodeName;
+        console.log(content.firstElementChild);
+        console.log(content.lastElementChild);
+
+        let children = content.children;
+        console.log(children);
+    </script>
+    </body>
+</html>

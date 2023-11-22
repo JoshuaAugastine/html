@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            //you can use the call() method for chaining constructor of an object
+
+            function Box(height, width){
+                this.height = height;
+                this.width = width;
+            }
+
+            function Widget(height, width, color){
+                Box.call(this, height, width);
+                this.color = color;
+            }
+
+            let widget = new Widget(100,200,'red');
+            console.log(widget);
+            
+        </script>
+    </body>
+</html>

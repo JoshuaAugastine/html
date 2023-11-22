@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            //body -> state(data) + behaviour(func/method/action)
+            const car = {
+                name : 'car',
+                start(){
+                    console.log('start the ' + this.name);
+                },
+                speedUp(){
+                    console.log('speed up the ' + this.name);
+                },
+                stop(){
+                    console.log('stop the ' + this.name);
+                },
+            };
+             const aircraft = {
+                name : 'aircraft-jetone', //this.name
+                fly(){
+                    console.log('Fly');
+                }
+             }
+              car.start.call(aircraft);
+              car.speedUp.call(aircraft);
+              aircraft.fly()
+
+        </script>
+    </body>
+</html>

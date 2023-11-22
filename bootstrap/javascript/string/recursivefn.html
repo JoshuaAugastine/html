@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            function countdown(fromNumber){
+                console.log(fromNumber);
+
+                //countdown(fromNumber - 1);
+                let nextNumber = fromNumber-1;
+
+                if(nextNumber > 0){
+                    countdown(nextNumber);
+                }
+            }
+            countdown(9);
+        </script>
+    </body>
+</html>

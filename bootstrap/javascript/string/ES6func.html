@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            function mul(x,y){  //normal function
+                return (x*y);
+            }
+            let x = function(x,y){ //anonymous function
+                return x*y;
+            }
+            let x1=(x,y,z) => x*y*z; //arrow function
+
+            console.log(x(10,20));
+            console.log(mul(10,30));
+            console.log(x1(10,40,5));
+        </script>
+    </body>
+</html>

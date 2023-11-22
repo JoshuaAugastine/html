@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            class Person{
+                constructor(name){
+                    this.name = name;
+                }
+            getName(){
+                return this.name;
+            }
+            static createAnonymous(gender){
+                let name = gender == "male" ? "vignesh" : "lavanya";
+                return new Person(name);
+            }
+        }
+        console.log(Person.createAnonymous("male"))
+        //console.log(person.)
+        </script>
+    </body>
+</html>

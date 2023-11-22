@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <script>
+            class Item{
+                static count = 0; //static property
+                static getCount(){  //static method
+                return Item.count;
+                }
+            }
+            console.log(Item.getCount()); //0
+            console.log(Item.count);
+        </script>
+    </body>
+</html>

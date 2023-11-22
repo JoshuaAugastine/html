@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h2>Demo: Getting Array Size</h2>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <script>
+            let cities = ["mumbai", "new york", "paris", "sydney"];
+            document.getElementById("p1").innerHTML = cities.length;
+             
+            cities[4]="delhi"; //it will be add at 5th pos of array
+            cities[2]="newzland"; //update the array
+            cities[cities.length]="london"; //use length prop to specify that  - last one of the array
+            cities[8]="bangalore"; // it will be add at the 9th pos of array , without ,7 and 6.
+            cities.push("coimbatore") // it will be add ath the end 
+            cities.unshift('chennai'); // unshift used to add the element at first pos of an array.
+            cities.unshift('ooty');
+            document.getElementById("p2").innerHTML = cities;
+            document.getElementById("p3").innerHTML = cities.length;
+            document.getElementById("p4").innerHTML = cities.slice(0,4) + " " + cities.slice(5,10);
+        </script>
+    </body>
+</html>

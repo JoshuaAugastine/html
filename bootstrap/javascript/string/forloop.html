@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>Demo: Js Object Using for in loop</h1>
+        <script>
+            var person = new Object();
+            person.firstname = "joshua";
+            person.lastname = "augastine";
+
+            for(var prop in person){
+                alert(prop); // access property name 
+                alert(person[prop]); //access property value
+            }
+        </script>
+    </body>
+</html>

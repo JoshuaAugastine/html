@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+        Javascript
+    </title>
+    <script>
+        document.addEventListener('DOMContentLoaded',() =>{
+            let btn =document.getElementById('btn');
+            btn.addEventListener('click',() => {
+                console.log('clicked');
+            });
+        });
+      
+    
+</script>
+</head>
+<body>
+        <button id="btn">Click Me!</button>
+        <button id="btn1" onclick="console.log('clicked')">Click Me!</button>
+        <button id="btn2" onclick="alert('clicked')">Check</button>
+
+        <script>
+            let btn = document.querySelector('#btn');
+            btn.addEventListener('click', (event) => {
+                console.log('clicked');
+            });
+            </script>
+    </body>
+    </html>

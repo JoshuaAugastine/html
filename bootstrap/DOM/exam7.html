@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Js setAttribute() Demo</title>
+    </head>
+    <body>
+        <button id="btnSend">Send</button>
+        <input type="password" id="password" style="color:rgb(92, 4, 4)" >
+
+        <script>
+            let btnSend = document.querySelector('#btnSend');
+            let input1 = document.querySelector('#password')
+            input1.setAttribute("style", "color:blue");
+
+            if(btnSend){
+                btnSend.setAttribute('disabled', ' ');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Js Style Demo</title>
+    </head>
+    <body>
+        <p id = "content" > Javascript Setting Style Demo!</p>
+        <button id ="btn">Submit</button>
+        <script>
+            let p = document.querySelector('#Content');
+            p.style.color = 'red';
+            p.style.fontWeight = 'bold';
+
+            let btn = document.querySelector('#btn');
+            function display(){
+                alert('it was clicked!');
+            }
+            btn.addEventListener('click',display);
+        </script>
+    </body>
+</html>

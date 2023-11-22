@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script>
+            function add(x,y){
+                return x + y ;
+            }
+            let result = add(10,20); //callling the func
+            console.log(result); //30
+
+            let result1 = add.call(this, 10,20); //callling the func using call() method
+            console.log(result1); //30
+
+
+        </script>
+    </body>
+</html>

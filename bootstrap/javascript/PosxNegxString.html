@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            let sum=0;
+            let num=0;
+
+            while(num >= 0){
+                //add all the positive numbers
+                sum += num;
+
+                //take input from the user
+                num = parseInt(prompt('Enter a number :'));
+
+                //continue condition
+                if(isNaN(num)){ //not a number
+                    console.log('you entered a string.');
+                    num=0;
+                    continue;
+                }
+            }
+                //display the sum
+                console.log(`the sum is ${sum}.`);
+        </script>
+    </body>
+</html>

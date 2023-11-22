@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <script>
+            const students = ['john', 'sara', 'jack'];
+
+            //using for...of
+            for(let element of students){
+
+                console.log(element);
+            }
+
+            for(const obj in students){
+            console.log(obj);
+            console.log(students[obj])
+            }
+
+            const string = 'joshua'
+            for(let i of string){
+                console.log(i);
+            }
+
+            //define set
+            const set = new Set([1,2,3,2,3,4]); //1234
+            for(let i of set){
+                console.log(i);
+            }
+
+            //define map
+            let map = new Map(); 
+            //inserting elements
+            map.set('name', 'Jack');
+            map.set('age', '27');
+
+            for(let [key, value] of map){
+                console.log(key + '-' + value);
+            }
+
+            const person = {
+                'stud_id': 12,
+                'stud_name' : 'ganga',
+                'mark': 76
+            }
+                for(const obj in person){
+                console.log(obj + '-' + person[obj]);
+            }
+        </script>
+    </body>
+</html>

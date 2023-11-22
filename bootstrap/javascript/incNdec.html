@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <p>x=5;</p>
+        <p id="p1">x++=</p>
+        <p id="p2">x=</p>
+        <p id="p3">++x=</p>
+        <p id="p4">x--=</p>
+        <p id="p5">x=</p>
+        <p id="p6">--x=</p>
+
+        <script>
+            let x=5;
+
+            document.getElementById("p1").innerHTML += x++;  //post inc => x++=5
+
+            document.getElementById("p2").innerHTML += x;  //value changes here => x=6
+
+            document.getElementById("p3").innerHTML += ++x;  //post inc & val change => ++x =7
+
+            document.getElementById("p4").innerHTML += x--;  //post dec => x--=7
+
+            document.getElementById("p5").innerHTML += x;  //val change=> x=6
+
+            document.getElementById("p6").innerHTML += --x;  //post dec & val chnge => --x=5
+        </script>
+    </body>
+</html>

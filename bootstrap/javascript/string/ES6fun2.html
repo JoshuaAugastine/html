@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            //arrow fnc with no argument
+            let greet = () => console.log('hello');
+            greet();  //hello
+
+            //arrow fuc with one argument
+            let greet1 = x => console.log(x);
+            greet1('josh'); //josh
+
+            //arrow fnc as an expression
+            let age = 5;
+            let check = (age<18)?  // conditional operator
+                () => console.log('baby') : () => console.log('adult');
+                check();
+            
+        </script>
+    </body>
+</html>

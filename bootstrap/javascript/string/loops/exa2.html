@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script>
+            Array.prototype.four = 100; // it take as a last prototype of index
+
+            const items = [10,20,30]; //it takes a value as index
+            let total = 0;
+
+            for(var prop in items){
+                console.log({prop, value: items[prop] });
+                total += items[prop];
+            }
+            console.log(total);
+        </script>
+    </body>
+</html>
